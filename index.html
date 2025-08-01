@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Harry Potter Psychological Profiles</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f0f0f0;
+    background: url('https://w0.peakpx.com/wallpaper/290/679/HD-wallpaper-harry-potter-harry-potter-and-the-chamber-of-secrets-hogwarts-castle.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  #container {
+    background: rgba(20, 20, 30, 0.85);
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ffd700;
+    text-shadow: 1px 1px 4px #000;
+  }
+  .character {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+  .portrait {
+    flex: 0 0 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000;
+  }
+  .portrait img {
+    width: 120px;
+    height: auto;
+    display: block;
+  }
+  .description {
+    flex: 1;
+  }
+  .highlight {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px 5px;
+    transition: background-color 0.3s ease;
+  }
+  .color1 { background-color: rgba(255, 215, 0, 0.7); color: #000; }
+  .color2 { background-color: rgba(135, 206, 235, 0.7); color: #000; }
+  .color3 { background-color: rgba(199, 21, 133, 0.7); color: #fff; }
+  .color4 { background-color: rgba(60, 179, 113, 0.7); color: #000; }
+  .color5 { background-color: rgba(255, 140, 0, 0.7); color: #000; }
+
+  #definition-box {
+    position: fixed;
+    max-width: 320px;
+    background: rgba(30, 30, 40, 0.95);
+    color: #fff;
+    border: 1px solid #888;
+    padding: 15px 20px 15px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    display: none;
+    z-index: 1200;
+  }
+  #definition-box button {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 22px;
+    float: right;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 5px;
+  }
+
+  @media (max-width: 700px) {
+    .character {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .portrait {
+      margin-bottom: 10px;
+    }
+    #definition-box {
+      max-width: 90%;
+      left: 5% !important;
+      top: auto !important;
+      bottom: 30px !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="container">
+  <h1>Harry Potter Psychological Profiles</h1>
+
+  <!-- Harry Potter -->
+  <div class="character" id="harry">
+    <div class="portrait">
+      <img src="https://i.postimg.cc/5tqcY0Y4/Harry-Potter-character-poster.jpg" alt="Harry Potter" />
+    </div>
+    <div class="description">
+      <p>
+        Harry is a resilient young man who overcomes challenges and stays focused on his goals. He is deeply altruistic, often making sacrifices for the sake of others. Having grown up in an emotionally neglectful environment, he 
+        <span class="highlight color1" data-def="To develop or nurture a strong ability to understand and share the feelings of others">cultivate a deep empathy</span> and a 
+        <span class="highlight color2" data-def="To have a strong and determined sense to follow ethical principles or moral duties">strong commitment to moral responsibility</span>.
+      </p>
+      <p>
+        Harry's impulsive nature reflects his passion and protective instincts, but it can also result in hasty decisions. Psychologically, he 
+        <span class="highlight color3" data-def="To show or display a combination of openness to emotional sensitivity and firmness of purpose">exhibit a mix of vulnerability and determination</span>, maintaining 
+        <span class="highlight color1" data-def="To continue to be faithful, supportive, and devoted to a person over time">loyalty to his friends and mentors</span>. His journey is marked by growth from a guarded, 
+        <span class="highlight color2" data-def="To feel uncertain, anxious, or lacking confidence in oneself or one’s abilities">insecure</span> boy into a 
+        <span class="highlight color3" data-def="To be self-assured and confident in one’s abilities and qualities">confident</span> and 
+        <span class="highlight color1" data-def="Being thoughtful means showing careful consideration or attention">thoughtful</span> leader.
+      </p>
+    </div>
+  </div>
+
+  <!-- Albus Dumbledore -->
+  <div class="character" id="dumbledore">
+    <div class="portrait">
+      <img src="https://i.postimg.cc/vHg8kYnX/Dumbledore-Prisoner-of-Azkaban.jpg" alt="Albus Dumbledore" />
+    </div>
+    <div class="description">
+      <p>
+        With a 
+        <span class="highlight color4" data-def="Having many different aspects or features">multifaceted character</span> rich in wisdom, Dumbledore consistently 
+        <span class="highlight color5" data-def="To show careful judgment and wise decision-making, especially to avoid risks or mistakes">demonstrates prudence</span>. His decisions, though often difficult, 
+        <span class="highlight color1" data-def="To show kindness and practical, realistic thinking in actions or decisions">reflect compassion and pragmatism</span> in pursuit of the greater good. Despite being haunted by past mistakes, he approaches mentoring with 
+        <span class="highlight color2" data-def="To show patience">patience</span> and a 
+        <span class="highlight color3" data-def="To deeply feel and acknowledge a strong duty or obligation to act carefully and reliably">profound sense of responsibility</span>. Dumbledore's psychological profile reveals a man who 
+        <span class="highlight color4" data-def="To regard love and forgiveness as important and to hold them in high esteem">values love and forgiveness</span>, accepting imperfection both in others and himself.
+      </p>
+    </div>
+  </div>
+
+  <!-- Hermione Granger -->
+  <div class="character" id="hermione">
+    <div class="portrait">
+      <img src="https://i.postimg.cc/KzqHBgZ2/Hermione-Granger-poster.jpg" alt="Hermione Granger" />
+    </div>
+    <div class="description">
+      <p>
+        Hermione 
+        <span class="highlight color5" data-def="To represent or express qualities of strict intellectual discipline and responsible attention to duties">embodies intellectual rigor and conscientiousness</span>. She is 
+        <span class="highlight color4" data-def="To be highly disciplined">highly disciplined</span> and values knowledge as a means of control and security. This partially 
+        <span class="highlight color3" data-def="To alleviate one’s insecurities means to reduce or ease feelings of uncertainty or anxiety">alleviates her insecurities</span> as a Muggle-born. Hermione's actions often 
+        <span class="highlight color2" data-def="To show kindness combined with practical thinking">balance logic with compassion</span>, showing a 
+        <span class="highlight color1" data-def="To show a strong commitment to fairness and integrity">strong commitment to fairness and integrity</span>. Thanks to her 
+        <span class="highlight color5" data-def="Emotional maturity means having a well-developed ability to manage emotions">emotional maturity</span>, Hermione brings stability to the group and 
+        <span class="highlight color4" data-def="To show unwavering loyalty to someone means to be faithful and devoted to them over time">demonstrates unwavering loyalty to her friends</span>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Severus Snape -->
+  <div class="character" id="snape">
+    <div class="portrait">
+      <img src="https://i.postimg.cc/sg5jfTwh/250px-Ootp076.jpg" alt="Severus Snape" />
+    </div>
+    <div class="description">
+      <p>
+        Snape's character is marked by 
+        <span class="highlight color3" data-def="To experience internal conflict means to go through a mental or emotional struggle caused by having opposing thoughts or feelings within oneself">internal conflict</span> and 
+        <span class="highlight color1" data-def="To experience emotional ambivalence means going through mixed or contradictory emotions about someone or something at the same time">emotional ambivalence</span>. His 
+        <span class="highlight color2" data-def="Outward demeanor refers to the external appearance or behavior one shows">outward demeanor</span> is stern and occasionally 
+        <span class="highlight color4" data-def="Intimidating means causing fear or awe">intimidating</span>, while his 
+        <span class="highlight color5" data-def="Inner life is the private emotional and mental experience one has">inner life</span> is shaped by love, 
+        <span class="highlight color3" data-def="To feel regret is to be sorry or remorseful for past actions">regret</span>, and sacrifice. Haunted by dark impulses and burdened by guilt, he takes the first steps on the road to 
+        <span class="highlight color1" data-def="Redemption means being saved or forgiven for past wrongs">redemption</span>. Snape represents the 
+        <span class="highlight color2" data-def="To represent the complexity of human motivations means to show that people's reasons for acting are often complicated and not simply good or evil">complexity of human motivations</span> beyond clear-cut notions of good and evil, showcasing the 
+        <span class="highlight color3" data-def="To showcase the tension between self-interest and duty means to highlight the conflict between acting for oneself and fulfilling obligations">tension between self-interest and duty</span>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Ron Weasley -->
+  <div class="character" id="ron">
+    <div class="portrait">
+      <img src="https://i.postimg.cc/vH1p7XgS/Ron-Weasley-poster.jpg" alt="Ron Weasley" />
+    </div>
+    <div class="description">
+      <p>
+        Ron embodies emotional sincerity, though he sometimes 
+        <span class="highlight color5" data-def="To struggle with insecurity and self-doubt means to have trouble coping with feelings of not being good enough and lacking self-assurance">struggles with insecurity and self-doubt</span>. Having spent his childhood in the shadow of older siblings' success, he struggles with a 
+        <span class="highlight color4" data-def="To struggle with a sense of inferiority means to feel less worthy or capable compared to others">sense of inferiority</span>. Despite using his humour and warmth to ease the tension caused by conflicts within the group, his reactions are sometimes driven by primal impulses such as jealousy and fear. Despite his vulnerabilities, Ron's courage shines in critical moments. He 
+        <span class="highlight color3" data-def="To show emotional growth and develop maturity over time means to demonstrate improvement in understanding and managing emotions">shows emotional growth and develops maturity over time</span>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="definition-box" role="dialog" aria-modal="true" aria-labelledby="definition-title">
+  <button aria-label="Close definition" onclick="hideDefinition()">×</button>
+  <div id="definition-content"></div>
+</div>
+
+<script>
+  (function() {
+    const highlights = document.querySelectorAll('.highlight');
+    const defBox = document.getElementById('definition-box');
+    const defContent = document.getElementById('definition-content');
+
+    highlights.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const definition = e.target.getAttribute('data-def');
+        defContent.textContent = definition;
+
+        const rect = e.target.getBoundingClientRect();
+        const boxWidth = defBox.offsetWidth || 320;
+        let left = rect.left + window.pageXOffset;
+        let top = rect.bottom + window.pageYOffset + 8;
+
+        if (left + boxWidth > window.innerWidth) {
+          left = window.innerWidth - boxWidth - 20;
+        }
+        if (top + defBox.offsetHeight > window.innerHeight + window.pageYOffset) {
+          top = rect.top + window.pageYOffset - defBox.offsetHeight - 8;
+        }
+
+        defBox.style.left = left + "px";
+        defBox.style.top = top + "px";
+        defBox.style.display = "block";
+      });
+    });
+
+    function hideDefinition() {
+      defBox.style.display = "none";
+    }
+
+    window.hideDefinition = hideDefinition;
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("highlight") && !defBox.contains(e.target)) {
+        hideDefinition();
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
